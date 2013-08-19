@@ -5,11 +5,15 @@
 <title> My First Kickstarter</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheets" type="text/css">
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheets" type="css/text"> 
+
 
 <style type="text/css">
 
-/*Large desktop*/
-@media(min-width:980px) {
+/* Large desktop */
+@media(min-width: 980px) {
 body {
 padding-top:60px;
 }
@@ -21,9 +25,34 @@ border-left: 1px white solid;
 }
 }
 
+/* All formats */
+/* Main body and headings */
+
+body{
+font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.heading, subheading { 
+font-family: 'Ubuntu', Helvetica, Arial, sans.serif;
+text-align: center;
+}
+
+p.lead{
+padding-top: 1.5%;
+font-size:24px;
+line-height: 30px;
+}
+
+p {
+padding-top:1.5%;
+font-size: 24px;
+line-height: 30px;
+}
 
 
-padding-top:20px;
+
+
+ing-top:20px;
 padding-bottom:40px;
 }
 .container{
@@ -82,29 +111,22 @@ border: 1px solid;
 </div>
 </div>
 
-
-
-
-  <div class="row navigation">
-   <div class="span2 logo">
-logo
-</div>
-<div class="span4 about">
-About
-</div>
-</div>
-      <div class="row heading">
+<!--We use row-fluid inside containers to achieve a resizable layout -->
+<div class="container">
+ <div class="row-fluid heading">
         <div class="span12">
-          <h1>Bitstarter Title</h1>
+          <h1>Product</h1>
         </div>
       </div> 
-     <div class="row subheading">
+     <div class="row-fluid  subheading">
         <div class="span12">
+
+<!--Special typography from Bootstarp for lead paragraph-->
           <p class="lead">This is my first bitstarter project.</p>
         </div>
       </div>
-      <div class="row pitch">
-        <div class="span6 video">
+      <div class="row-fluid  pitch">
+        <div class="span5 offset1 video">
           Video
         </div>
         <div class="span6">
